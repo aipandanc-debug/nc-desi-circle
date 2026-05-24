@@ -1,0 +1,33 @@
+export interface Professional {
+  id: string;
+  name: string;
+  title: string;
+  company: string;
+  category: 'Realtor' | 'Immigration Attorney' | 'CPA' | 'Financial Advisor' | 'Mortgage Broker' | 'Insurance Agent' | 'Physician' | 'Dentist' | 'Wedding Vendor';
+  specialties: string[];
+  city: string;
+  rating: number;
+  reviewCount: number;
+  verified: boolean;
+  phone: string;
+  email: string;
+  website: string;
+  bio: string;
+  credentials: string[];
+  languages: string[];
+  yearsExperience: number;
+  image: string;
+  partnershipTier: string;
+}
+
+export const professionals: Professional[] = [
+  { id: '1', name: 'Shiv S. Nunna', title: 'Founding Partner & Realtor', company: 'Nunna Realty', category: 'Realtor', specialties: ['Residential', 'First-Time Buyers', 'Indian Community Expert'], city: 'Cary', rating: 5.0, reviewCount: 187, verified: true, phone: '(919) 801-9003', email: 'shiv@nunnarealty.com', website: 'https://nunnarealty.com', bio: 'RRAR Board Director. 800+ transactions. The Triangle\'s go-to realtor for Indian families relocating to NC.', credentials: ['RRAR Board Director', 'Top 100 Triangle Realtor', '25+ Years Experience'], languages: ['English', 'Telugu', 'Hindi'], yearsExperience: 25, image: '/professional-realtor.jpg', partnershipTier: 'Founding Partner' },
+  { id: '2', name: 'Latesh K. Patel', title: 'Lead Broker', company: 'LP Realty', category: 'Realtor', specialties: ['Investment Properties', 'RTP Relocation', 'Commercial'], city: 'Morrisville', rating: 4.9, reviewCount: 142, verified: true, phone: '(919) 468-1050', email: 'latesh@lprealty.com', website: 'https://lprealtync.com', bio: '800+ transactions. Top 100 Triangle. Specializes in helping tech professionals find homes near RTP.', credentials: ['Top 100 Triangle', '800+ Transactions', 'Broker-Owner'], languages: ['English', 'Gujarati', 'Hindi'], yearsExperience: 20, image: '/professional-realtor.jpg', partnershipTier: 'Founding Partner' },
+  { id: '3', name: 'Rabindra Singh', title: 'Managing Attorney', company: 'HSD Immigration Law', category: 'Immigration Attorney', specialties: ['H1B', 'EB1/EB2', 'Green Cards', 'Family Immigration'], city: 'Raleigh', rating: 4.8, reviewCount: 312, verified: true, phone: '(919) 833-3000', email: 'rabindra@hsdimmigration.com', website: 'https://hsdimmigration.com', bio: 'Governor\'s Advisory Council member. 130K+ subscribers trust his immigration guidance.', credentials: ["Governor's Advisory Council", '15+ Years Practice', 'AILA Member'], languages: ['English', 'Hindi', 'Punjabi'], yearsExperience: 15, image: '/professional-attorney.jpg', partnershipTier: 'Founding Partner' },
+  { id: '4', name: 'Laura Edgerton', title: 'Senior Immigration Attorney', company: 'Edgerton Immigration', category: 'Immigration Attorney', specialties: ['Employment-Based', 'Extraordinary Ability', 'Deportation Defense'], city: 'Raleigh', rating: 4.9, reviewCount: 198, verified: true, phone: '(919) 755-2200', email: 'laura@edgertonimmigration.com', website: 'https://edgertonimmigration.com', bio: '4x Best Lawyer of the Year. Represented Olympic athletes and Emmy winners.', credentials: ['4x Best Lawyer of America', 'AILA Carolinas Chapter', 'Federal Court Admission'], languages: ['English'], yearsExperience: 18, image: '/professional-attorney.jpg', partnershipTier: 'Founding Partner' },
+  { id: '5', name: 'Chad Holland, CFA CFP', title: 'Managing Partner', company: 'Holland Capital', category: 'Financial Advisor', specialties: ['Wealth Management', 'Retirement Planning', 'Tax Strategy'], city: 'Cary', rating: 4.9, reviewCount: 98, verified: true, phone: '(919) 432-1282', email: 'chad@hollandcapital.com', website: 'https://hollandcapital.com', bio: 'Dual charterholder CFA & CFP. True fiduciary serving Morrisville\'s affluent Indian professionals.', credentials: ['CFA Charterholder', 'CFP Professional', 'Fiduciary'], languages: ['English'], yearsExperience: 22, image: '/professional-realtor.jpg', partnershipTier: 'Founding Partner' },
+  { id: '6', name: 'Kiran Mohan', title: 'Creative Director', company: 'Sonaa Weddings', category: 'Wedding Vendor', specialties: ['Full Wedding Planning', 'Design & Decor', 'Day-of Coordination'], city: 'Charlotte', rating: 5.0, reviewCount: 156, verified: true, phone: '(704) 555-0147', email: 'kiran@sonaaweddings.com', website: 'https://sonaaweddings.com', bio: '15+ years creating magical South Asian weddings. Host of Carolina Desi Podcast.', credentials: ['15+ Years Experience', '500+ Weddings', 'Podcast Host'], languages: ['English', 'Hindi', 'Tamil'], yearsExperience: 15, image: '/professional-realtor.jpg', partnershipTier: 'Founding Partner' },
+  { id: '7', name: 'Ripal Patel', title: 'Luxury Specialist', company: 'Compass', category: 'Realtor', specialties: ['Luxury Homes', 'New Construction', 'Investment'], city: 'Charlotte', rating: 4.8, reviewCount: 134, verified: true, phone: '(704) 555-0165', email: 'ripal@compass.com', website: 'https://compass.com/agents/ripal', bio: 'Engineer turned realtor. Unique expertise for luxury Indian home buyers.', credentials: ['Compass Elite', 'Engineering Background', 'Luxury Specialist'], languages: ['English', 'Gujarati', 'Hindi'], yearsExperience: 12, image: '/professional-realtor.jpg', partnershipTier: 'Premium Partner' },
+  { id: '8', name: 'DJ Mehul', title: 'Founder & DJ', company: 'The Desi DJ Company', category: 'Wedding Vendor', specialties: ['Wedding DJ', 'Corporate Events', 'Bollywood Nights'], city: 'Charlotte', rating: 4.9, reviewCount: 267, verified: true, phone: '(704) 555-0198', email: 'mehul@thedesidj.com', website: 'https://thedesidj.com', bio: 'Featured in People Magazine, Vogue, Maharani Weddings. Ranveer Singh\'s recommended DJ.', credentials: ['People Magazine Feature', 'Vogue India', 'Ranveer Singh Endorsed'], languages: ['English', 'Hindi'], yearsExperience: 10, image: '/professional-realtor.jpg', partnershipTier: 'Premium Partner' },
+  { id: '9', name: 'Dr. Priya Sharma', title: 'Board-Certified Physician', company: 'Sharma Family Medicine', category: 'Physician', specialties: ['Family Medicine', 'Women\'s Health', 'Pediatrics'], city: 'Durham', rating: 4.8, reviewCount: 189, verified: true, phone: '(919) 555-0134', email: 'dr.sharma@sharmafm.com', website: 'https://sharmafm.com', bio: 'Serving the Triangle\'s Indian families for over a decade. Holistic care with cultural understanding.', credentials: ['Board Certified', 'UNC Medical School', '10+ Years Practice'], languages: ['English', 'Hindi', 'Gujarati'], yearsExperience: 12, image: '/professional-realtor.jpg', partnershipTier: 'Professional Partner' },
+];
